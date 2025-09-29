@@ -6,7 +6,7 @@ apgn = pd.read_csv('datos_anteproyecto.csv')
 ran = pd.read_csv('datos_random.csv')
 
 st.title("Análisis de datos macroeconómicos")
-st.write("Acontinuación se elaboró una tabla tipo Treemap con la ayuda del gráficador rapido 'plotly.express' que permite visualizar los datos, anteriormente limpiados, en forma de gráfico jerárquico en el que cada rectángulo representa un elemento y el tamaño esta representado por un valor numérico.") 
+st.write("Acontinuación se elaboró una tabla tipo Treemap con la ayuda del gráficador rapido **plotly.express** que permite visualizar los datos, anteriormente limpiados, en forma de gráfico jerárquico en el que cada rectángulo representa un elemento y el tamaño esta representado por un valor numérico.") 
 
 tab2, = st.tabs(['Gráfico de análisis'])
 
