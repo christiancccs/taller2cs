@@ -10,7 +10,7 @@ st.write("Acontinuación se elaboró una tabla tipo Treemap con la ayuda del gr�
 
 tab2 = st.tabs(['Gráfico de análisis'])
 
-with Gráfico de análisis:
+with 'Gráfico de análisis':
     fig =  px.treemap(data_frame = apgn,
            path=[px.Constant("PGN"),
                  "Nombre Sector",
