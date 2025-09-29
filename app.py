@@ -14,10 +14,10 @@ with tab2:
     st.subheader("Programa Anteproyecto 2026")
 
 
-        st.markdown("""
-    Este gráfico muestra la proyección presupuestal de cada una de las dependencias 
-del Estado colombiano con base en el **Programa Anteproyecto 2026** realizado por 
-el **Ministerio de Hacienda y Crédito Público de Colombia** el 4 de abril del 2025.
+    st.markdown("""
+     Este gráfico muestra la proyección presupuestal de cada una de las dependencias 
+     del Estado colombiano con base en el **Programa Anteproyecto 2026** realizado por 
+    el **Ministerio de Hacienda y Crédito Público de Colombia** el 4 de abril del 2025.
 
 - El tamaño de cada rectángulo demuestra la proporción del presupuesto proyectado.  
 - Existen tres tipos de asignación presupuestal:  
