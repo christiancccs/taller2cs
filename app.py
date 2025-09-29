@@ -5,44 +5,10 @@ import plotly.express as px
 apgn = pd.read_csv('datos_anteproyecto.csv') 
 ran = pd.read_csv('datos_random.csv')
 
-st.title("Aplicación 2")
+st.title("Análisis de datos macroeconómicos")
+st.write("Acontinuación se elaboró una tabla tipo Treemap con la ayuda del gráficador rapido 'plotly.express' que permite visualizar los datos, anteriormente limpiados, en forma de gráfico jerárquico en el que cada rectángulo muestra la proyección de gasto de cada una de las dependencias del estado colombiano con base en el Programa Anteproyecto 2026 realizado por el Ministerio de Hacienda y Crédito Público de Colombia") 
 
-tab1, tab2 = st.tabs(['Tab 1', 'Tab 2'])
-
-with tab1:
-    # análisis univariado 
-    fig, ax = plt.subplots(1, 3, figsize=(10, 4))
-
-    # educ
-    tab_freq = ran['educ'].value_counts().sort_index()
-    ax[0].bar(tab_freq.index, tab_freq.values)
-    ax[0].bar(tab_freq.index, tab_freq.values, color='skyblue')  
-
-
-    # edad
-    ax[1].hist(ran['edad'], bins=30)
-    ax[1].hist(ran['edad'], bins=30, color='lightgreen', edgecolor='black')  
-   
-
-
-    #wage
-    ax[2].hist(ran['wage'], bins=40)
-
-    ax[2].hist(ran['wage'], bins=40, color='salmon', edgecolor='black')
-    st.pyplot(fig)
-
-    # análisis bivariado
-    fig, ax = plt.subplots(1, 2, figsize=(10,4))
-
-    # educ vs. wage 
-    ax[0].scatter(ran['educ'], ran['wage'])
-    ax[0].scatter(ran['educ'], ran['wage'], alpha=0.5, color='purple')  
-
-
-    # edad vs. wage
-    ax[1].scatter(ran['edad'], ran['wage'])
-    ax[1].scatter(ran['edad'], ran['wage'], alpha=0.5, color='orange')
-    st.pyplot(fig)
+tab2 = st.tabs(['Gráfico de análisis'])
 
 with tab2:
     fig =  px.treemap(data_frame = apgn,
